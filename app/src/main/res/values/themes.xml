@@ -1,0 +1,11 @@
+<!-- res/values/styles.xml -->
+<resources>
+
+    <!-- Define your app's theme -->
+    <style name="Theme.Movie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Set the background color -->
+        <item name="android:windowBackground">@color/background_color</item>
+    </style>
+
+</resources>
+

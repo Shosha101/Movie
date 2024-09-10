@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="headText">
+        <item name="android:background">@color/background_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item> <!-- Use your preferred font -->
+    </style><style name="movie_name">
+        <item name="android:background">@color/background_color</item>
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item> <!-- Use your preferred font -->
+    </style>
+
+    <style name="tabText">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/poppins_medium</item> <!-- Use your preferred font -->
+    </style>
+    <style name="ShapeAppearanceOverlay.BottomCornersRounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">16dp</item>
+        <item name="cornerSizeBottomRight">16dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+    <style name="CustomImageRadius">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="CircularShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+</resources>

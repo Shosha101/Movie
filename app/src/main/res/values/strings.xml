@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Movie</string>
+    <string name="intro">What do you want to watch?</string>
+    <string name="search_hint">Search</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="up_coming">Upcoming</string>
+    <string name="top_rated">Top rated</string>
+    <string name="popular">Popular</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="watch_list">Watch List</string>
+    <string name="info">info</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="movie_rate">9.5</string>
+    <string name="movie_category">Action</string>
+    <string name="movie_date">2019</string>
+    <string name="time">139 minutes</string>
+    <string name="category_placeholder">Action</string>
+    <string name="details">Details</string>
+    <string name="about_movie">About Movie</string>
+    <string name="about_movie_details">From DC Comics comes the Suicide Squad, an antihero team of incarcerated supervillains who act as deniable assets for the United States government, undertaking high-risk black ops missions in exchange for commuted prison sentences.</string>
+    <string name="reviews">Reviews</string>
+    <string name="cast">Cast</string>
+    <string name="not_found">Not Found</string>
+</resources>

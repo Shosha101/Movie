@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Movie Poster -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="@dimen/val_100dp"
+            android:layout_height="@dimen/val_146dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_movie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Movie Title -->
+        <TextView
+
+            android:id="@+id/movie_name_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/val_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/materialCardView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Rating Image and Text -->
+
+        <!-- Category Image and Text -->
+
+        <ImageView
+            android:id="@+id/rate_img_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toStartOf="@id/movie_name_id"
+            app:layout_constraintTop_toBottomOf="@id/movie_name_id"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/rate_num_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gold"
+            android:textSize="@dimen/val_12sp"
+            app:layout_constraintStart_toStartOf="@+id/rate_img_id"
+            app:layout_constraintTop_toTopOf="@+id/rate_img_id" />
+
+        <ImageView
+            android:id="@+id/cat_img_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/val_5dp"
+            app:layout_constraintStart_toStartOf="@id/rate_img_id"
+            app:layout_constraintTop_toBottomOf="@id/rate_img_id"
+            app:srcCompat="@drawable/coupon" />
+
+        <!-- Release Date Image and Text -->
+
+        <TextView
+            android:id="@+id/category_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/val_12sp"
+            app:layout_constraintStart_toStartOf="@+id/cat_img_id"
+            app:layout_constraintTop_toBottomOf="@+id/rate_num_id" />
+
+        <ImageView
+            android:id="@+id/date_movie_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/val_5dp"
+            app:layout_constraintStart_toStartOf="@id/cat_img_id"
+            app:layout_constraintTop_toBottomOf="@id/cat_img_id"
+            app:srcCompat="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/date_num_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/val_12sp"
+            app:layout_constraintStart_toStartOf="@+id/date_movie_id"
+            app:layout_constraintTop_toBottomOf="@+id/category_name_id" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

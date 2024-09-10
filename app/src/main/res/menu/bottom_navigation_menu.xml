@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeItemID"
+        android:title="@string/home"
+        android:icon="@drawable/home"></item>
+
+    <item android:id="@+id/searchItemID"
+        android:title="@string/search"
+        android:icon="@drawable/search"></item>
+
+    <item android:id="@+id/watchListItemID"
+        android:title="@string/watch_list"
+        android:icon="@drawable/save"></item>
+
+
+</menu>
+

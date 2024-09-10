@@ -1,0 +1,73 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeItemID">
+
+    <!-- Home Page Fragment -->
+    <fragment
+        android:id="@+id/homeItemID"
+        android:name="com.example.movie.ui.view.HomePageFragment"
+        android:label="homePageFragment"
+        tools:layout="@layout/fragment_home_page">
+
+
+        <action
+            android:id="@+id/action_homeItemID_to_detailFrag_id"
+            app:destination="@id/detailFrag_id" />
+        <action
+            android:id="@+id/action_homeItemID_to_watchListItemID"
+            app:destination="@id/watchListItemID" />
+    </fragment>
+
+    <!-- Details Fragment -->
+    <fragment
+        android:id="@+id/detailFrag_id"
+        android:name="com.example.movie.ui.view.DetailsFragment"
+        android:label="DetailsFragment"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_detailFrag_id_to_homeItemID"
+            app:destination="@id/homeItemID" />
+        <action
+            android:id="@+id/action_detailFrag_id_to_NotFoundFragment"
+            app:destination="@id/fragmentNotFoundFragment" />
+        <argument
+            android:name="movieId"
+            app:argType="integer" />
+
+    </fragment>
+
+    <!-- Search Fragment -->
+    <fragment
+        android:id="@+id/searchItemID"
+        android:name="com.example.movie.ui.view.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchItemID_to_homeItemID"
+            app:destination="@id/homeItemID" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/watchListItemID"
+        android:name="com.example.movie.ui.view.WatchListFragment"
+        android:label="WatchListFragment"
+        tools:layout="@layout/watch_list_fragment">
+
+
+        <action
+            android:id="@+id/action_watchListItemID_to_homeItemID"
+            app:destination="@id/homeItemID" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNotFoundFragment"
+        android:name="com.example.movie.ui.view.NotFoundFragment"
+        android:label="Fragment Not Found"
+        tools:layout="@layout/fragment_not_found">
+        <action
+            android:id="@+id/action_fragmentNotFoundFragment_to_homeItemID"
+            app:destination="@id/homeItemID" />
+    </fragment>
+
+</navigation>

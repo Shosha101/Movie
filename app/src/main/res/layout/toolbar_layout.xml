@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+    </data>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_marginTop="@dimen/val_15dp"
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/left_icon"
+        app:navigationIconTint="@color/white"
+        app:title="@string/search"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white"
+        android:background="@color/background_color"
+        android:paddingStart="@dimen/val_16dp"
+        android:paddingEnd="@dimen/val_16dp"
+        app:menu="@menu/tool_bar_menu"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+</layout>

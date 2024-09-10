@@ -1,0 +1,59 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Bind your data model here if needed -->
+    </data>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:background="@color/background_color">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/cast_image_id"
+                android:layout_width="@dimen/val_100dp"
+                android:layout_height="@dimen/val_100dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/CircularShape"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+
+                android:id="@+id/cast_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cast Name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/val_12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cast_image_id"
+                app:layout_constraintStart_toStartOf="@+id/cast_image_id"
+                app:layout_constraintTop_toBottomOf="@+id/cast_image_id"
+                tools:text="Iqbal Shafiq Rozaan" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

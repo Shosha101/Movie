@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="val_34dp">34dp</dimen>
+    <dimen name="val_42dp">42dp</dimen>
+    <dimen name="val_21dp">21dp</dimen>
+    <dimen name="val_16dp">16dp</dimen>
+    <dimen name="val_145dp">145dp</dimen>
+    <dimen name="val_210dp">210dp</dimen>
+    <dimen name="val_250dp">250dp</dimen>
+    <dimen name="val_44dp">44dp</dimen>
+    <dimen name="val_31dp">31dp</dimen>
+    <dimen name="val_12sp">12sp</dimen>
+    <dimen name="val_10sp">10sp</dimen>
+    <dimen name="val_8sp">8sp</dimen>
+    <dimen name="val_12dp">12dp</dimen>
+    <dimen name="val_30sp">30sp</dimen>
+    <dimen name="val_13dp">13dp</dimen>
+    <dimen name="val_18dp">18dp</dimen>
+    <dimen name="val_100dp">100dp</dimen>
+    <dimen name="val_146dp">146dp</dimen>
+    <dimen name="val_20dp">20dp</dimen>
+    <dimen name="val_1dp">1dp</dimen>
+    <dimen name="text_30sp">30sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_7sp">7sp</dimen>
+    <dimen name="val_16sp">16sp</dimen>
+    <dimen name="val_14dp">14dp</dimen>
+    <dimen name="val_5dp">5dp</dimen>
+    <dimen name="val_29dp">29dp</dimen>
+    <dimen name="val_15dp">15dp</dimen>
+    <dimen name="val_211dp">211dp</dimen>
+    <dimen name="val_160dp">160dp</dimen>
+    <dimen name="val_151dp">151dp</dimen>
+    <dimen name="val_40dp">40dp</dimen>
+    <dimen name="val_50dp">50dp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="val_51dp">51dp</dimen>
+    <dimen name="val_7dp">7dp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="val_27dp">27dp</dimen>
+
+</resources>

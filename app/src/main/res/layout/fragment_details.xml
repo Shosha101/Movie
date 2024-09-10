@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Add any binding variables if needed -->
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main content wrapped in a NestedScrollView -->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.view.DetailsFragment">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/tool_bar_details"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/moviePoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    android:background="@drawable/bottom_rounded_corners"
+                    android:clipToOutline="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/placeholder"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/shapeableImageView"
+                    android:layout_width="95dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="@dimen/val_27dp"
+                    android:layout_marginTop="152dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/moviePoster"
+                    app:shapeAppearanceOverlay="@style/CustomImageRadius" />
+
+                <LinearLayout
+                    android:id="@+id/movieRatingContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/movie_shape"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="6dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/moviePoster"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/star_cover2" />
+
+                    <TextView
+                        android:id="@+id/movieRatingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/gold"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:maxWidth="200dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:id="@+id/detailsMovieNameId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Movie Title"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/shapeableImageView"
+                    app:layout_constraintTop_toBottomOf="@id/moviePoster" />
+
+                <LinearLayout
+                    android:id="@+id/linearDetailsId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/shapeableImageView">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/calendar" />
+
+                    <TextView
+                        android:id="@+id/movieDateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/val_12dp"
+                        android:text="Release Date"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="@dimen/val_12dp"
+                        android:background="@android:color/white" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/coupon" />
+
+                    <TextView
+                        android:id="@+id/movieCategoryText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/val_12dp"
+                        android:text="Category"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/tabBarDetailsId"
+                    layout="@layout/details_tab_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/val_27dp"
+                    android:layout_marginTop="@dimen/val_24dp"
+                    app:layout_constraintTop_toBottomOf="@id/linearDetailsId" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- ProgressBar for loading state -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    </layout>
